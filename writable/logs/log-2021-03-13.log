@@ -1,0 +1,234 @@
+CRITICAL - 2021-03-13 16:25:41 --> Call to undefined function form_open()
+#0 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('welcome_message', Array, true)
+#3 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(9): view('welcome_message')
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-13 16:25:52 --> Call to undefined function form_open()
+#0 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('welcome_message', Array, true)
+#3 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(9): view('welcome_message')
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-13 16:33:43 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+#0 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-13 16:37:45 --> Class 'App\Models\Model' not found
+#0 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(294): include_once()
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Link...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Link...')
+#4 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(22): spl_autoload_call('App\\Models\\Link...')
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-13 16:38:05 --> min_lenght is not a valid rule.
+#0 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_lenght')
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Validation\Validation.php(164): CodeIgniter\Validation\Validation->processRules('url', 'URL', 'http://uol.com....', Array, Array)
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\BaseModel.php(1421): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\BaseModel.php(722): CodeIgniter\BaseModel->validate(Array)
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(22): CodeIgniter\BaseModel->save(Array)
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#8 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-03-13 16:38:12 --> There is no data to insert.
+#0 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#3 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(22): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-13 16:40:04 --> Function name must be a string
+#0 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-13 16:45:42 --> Undefined variable: link_encurtado
+#0 C:\xampp\htdocs\encurtador\app\Views\home.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(9): view('home')
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-13 16:45:45 --> Undefined variable: link_encurtado
+#0 C:\xampp\htdocs\encurtador\app\Views\home.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(9): view('home')
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-13 16:46:30 --> Call to undefined method App\Models\LinkModel::max
+#0 C:\xampp\htdocs\encurtador\app\Models\LinkModel.php(32): CodeIgniter\Model->__call('max', Array)
+#1 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(20): App\Models\LinkModel->getLastId()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-13 16:46:51 --> Object of class App\Models\LinkModel could not be converted to string
+#0 C:\xampp\htdocs\encurtador\vendor\hashids\hashids\src\Hashids.php(157): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 157, Array)
+#1 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(20): Hashids\Hashids->encode(Object(App\Models\LinkModel))
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-13 16:47:37 --> Object of class App\Models\LinkModel could not be converted to string
+#0 C:\xampp\htdocs\encurtador\vendor\hashids\hashids\src\Hashids.php(157): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 157, Array)
+#1 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(20): Hashids\Hashids->encode(Object(App\Models\LinkModel))
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-13 16:47:43 --> Object of class App\Models\LinkModel could not be converted to string
+#0 C:\xampp\htdocs\encurtador\vendor\hashids\hashids\src\Hashids.php(157): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 157, Array)
+#1 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(20): Hashids\Hashids->encode(Object(App\Models\LinkModel))
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-13 16:49:56 --> Cannot use object of type App\Models\LinkModel as array
+#0 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(20): App\Models\LinkModel->getLastId()
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-13 16:50:53 --> Cannot use object of type App\Models\LinkModel as array
+#0 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(20): App\Models\LinkModel->getLastId()
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-13 16:50:54 --> Cannot use object of type App\Models\LinkModel as array
+#0 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(20): App\Models\LinkModel->getLastId()
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-13 16:51:03 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(20): App\Models\LinkModel->getLastId()
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-13 17:01:15 --> Undefined index: link_encurtado
+#0 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-13 17:01:54 --> Undefined property: App\Controllers\Url::$validation
+#0 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-13 17:02:14 --> Call to undefined method App\Models\LinkModel::getErrors
+#0 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(43): CodeIgniter\Model->__call('getErrors', Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-13 17:02:20 --> Undefined variable: hash
+#0 C:\xampp\htdocs\encurtador\app\Views\home.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 71, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(43): view('home', Array)
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-13 17:03:03 --> Undefined variable: link_encurtado
+#0 C:\xampp\htdocs\encurtador\app\Views\home.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 86, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(44): view('home', Array)
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-13 17:20:09 --> Undefined variable: hash
+#0 C:\xampp\htdocs\encurtador\app\Views\home.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 76, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\encurtador\app\Controllers\Url.php(44): view('home', Array)
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Url->store()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Url))
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-13 17:50:31 --> Array to string conversion
+#0 C:\xampp\htdocs\encurtador\app\Controllers\Home.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->redirect('nR')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}

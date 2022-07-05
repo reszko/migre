@@ -84,19 +84,32 @@ class Link extends BaseController
 
 	/**
 	 * Exclui um link do usuário logado
-	 * Não permito a exclusão de um link de outro usuário.
+	 * Não permito a exclusão de um link de outro usuário, a menos que o usuário logado seja admin
 	 *
 	 * @param [type] $id
 	 * @return void
 	 */
 	public function delete($id)
 	{
+		//Se for admin, permito a exclusão de links de outros usuários.
+		if ((bool)session()->admin === true) {
+			if ($this->linkModel->delete($id)) {
+				return redirect()->to(base_url('user'))->with('message', [
+					'tipo' => 'info',
+					'message' => 'Link excluído com sucesso.'
+				]);
+			}
+		}
+
+		//Se não for dono, não permito exclusão.
 		if (is_null($this->linkModel->where('usuarios_id', session()->id)->find($id))) {
 			return redirect()->to(base_url('user'))->with('message', [
 				'tipo' => 'danger',
 				'message' => '[ERRO] - Link não encontrado ou o link pertence a outro usuário.'
 			]);
 		}
+
+		//Se for dono do link, permito exclusão
 		if ($this->linkModel->where('usuarios_id', session()->id)->delete($id)) {
 			return redirect()->to(base_url('user'))->with('message', [
 				'tipo' => 'info',

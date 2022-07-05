@@ -42,6 +42,7 @@ class Login extends BaseController
 				session()->set([
 					'isLoggedIn' => true,
 					'id' => $dadosUsuario['id'],
+					'admin' => $dadosUsuario['admin'],
 					'email' => $dadosUsuario['email']
 				]);
 				//Se o login foi com sucesso.

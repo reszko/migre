@@ -25,12 +25,22 @@ class User extends BaseController
 	 */
 	public function index()
 	{
+		$this->linkModel->select('*,
+				links.id as id_link,
+				links.created_at as link_created_at,
+				links.updated_at as link_updated_at
+				');
+		//Se não for admin, então só mostra os próprios links.
+		if ((bool)session()->admin === false) {
+			$this->linkModel->where('usuarios_id', session()->id);
+		}
+
+		$this->linkModel->join('usuarios', 'usuarios.id = links.usuarios_id', 'LEFT');
+		$links = $this->linkModel->orderBy('clicks', 'desc')->orderBy('links.created_at', 'desc')->findAll();
+
 		return view('meus_links', [
-			'links' => $this->linkModel
-				->where('usuarios_id', session()->id)
-				->orderBy('clicks', 'desc')
-				->orderBy('created_at', 'desc')
-				->findAll()
+			'links' => $links,
+			'totalClicks' => $this->linkModel->totalClicks()
 		]);
 	}
 

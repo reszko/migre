@@ -9,3 +9,52 @@ CRITICAL - 2021-03-17 10:24:38 --> Call to undefined function img()
 #7 C:\xampp\htdocs\encurtador\public\index.php(42): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+CRITICAL - 2021-03-17 17:27:02 --> Undefined property: App\Controllers\User::$link
+#0 C:\xampp\htdocs\encurtador\app\Controllers\User.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\User->index()
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\encurtador\public\index.php(42): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-17 17:27:20 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\xampp\htdocs\encurtador\app\Views\meus_links.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('meus_links', Array, true)
+#4 C:\xampp\htdocs\encurtador\app\Controllers\User.php(38): view('meus_links', Array)
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\User->index()
+#6 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\encurtador\public\index.php(42): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-03-17 17:30:02 --> mysqli_sql_exception: Column 'created_at' in order clause is ambiguous in C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *, `link...')
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, `link...')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, `link...')
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *, `link...', Array, false)
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\encurtador\app\Controllers\User.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\User->index()
+#8 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\encurtador\public\index.php(42): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-03-17 17:30:02 --> Column 'created_at' in order clause is ambiguous
+#0 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *, `link...')
+#1 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, `link...')
+#2 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, `link...')
+#3 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *, `link...', Array, false)
+#4 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\encurtador\app\Controllers\User.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\User->index()
+#8 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\encurtador\public\index.php(42): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\encurtador\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}

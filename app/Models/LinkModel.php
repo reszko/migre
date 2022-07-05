@@ -14,6 +14,7 @@ class LinkModel extends Model
         'clicks'
     ];
     protected $useTimestamps = true;
+    protected $useSoftDeletes = true;
 
     protected $validationRules = [
         'link_original' => [
@@ -58,5 +59,21 @@ class LinkModel extends Model
             'id' => $id,
             'clicks' => ++$clicksAtual
         ]);
+    }
+
+    /**
+     * Retorna o total de clicks de todos os links
+     *
+     * @return void
+     */
+    public function totalClicks()
+    {
+        //Se o usuário logado for admin, mostro a contagem de todos os links cadastrados
+        //se não, mostro o total somente dos links do usuário logado
+        if ((bool)session()->admin === false) {
+            $this->where('id', session()->id);
+        }
+        $rq = $this->selectSum('clicks')->first();
+        return !is_null($rq) ? $rq['clicks'] : 0;
     }
 }
